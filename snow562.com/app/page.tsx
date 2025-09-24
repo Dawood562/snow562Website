@@ -13,7 +13,7 @@ export default function Home() {
       <img src="https://assets.snow562.com/images/me900.webp" alt="Me!" className = "img-float" width={600} />
       <br />
       <div id="description">Hi! This is me.<br />
-      An Undergraduate Computer Scientist with<br />a love for Cyber Security and Esports!</div> <br />
+      A Graduate Computer Scientist with a love for Cyber Security and Esports!</div> <br />
     </div>
   );
 }
