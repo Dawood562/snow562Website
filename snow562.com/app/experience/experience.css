@@ -1,0 +1,147 @@
+html {
+  font-family: "Montserrat";
+  height: 100vh;
+}
+
+#timeline {
+  margin-left: 20%;
+  justify-content: center;
+  overflow: hidden;
+  min-height: 100%
+}
+
+.event {
+  margin-left: 5%;
+  padding-top: 1%;
+  padding-bottom: 6%;
+  border-left: 3px solid #FFFFFF;
+  padding-left: 3em;
+  text-align: left;
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.event:after { /* Line coming out from timeline */
+  content: "";
+  display: block;
+  width: 5%;
+  padding-left: 0;
+  position: relative;
+  left: -3em;
+  bottom: -30px;
+  border-bottom: 2px solid white;
+}
+
+.event:first-child { /* Remove excess line above */
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(to bottom, transparent 0%, white 20%);
+  border-image-slice: 1;
+}
+
+.event:last-child { /* Remove excess line above */
+  border-left: 3px solid transparent;
+  border-image: linear-gradient(to bottom, white 90%, transparent 100%);
+  border-image-slice: 1;
+}
+
+.company-image {
+  width: 17.5%;
+}
+
+.details {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 2%;
+}
+
+.company {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.position {
+  font-size: 2em;
+}
+
+.date {
+  font-size: 1.25em;
+}
+
+.description {
+  margin-top: 2%;
+  white-space: pre-wrap;
+}
+
+.role-switch {
+  padding-left: 2em;
+}
+
+.with-list ul {
+  display: block;
+  list-style: disc;
+  line-height: 1em;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+#downArrow {
+  position: absolute;
+  bottom: 5px;
+  width: 6%;
+  right: 47%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  animation: up-and-down 1s ease 0s infinite alternate;
+  cursor: pointer;
+}
+
+@keyframes up-and-down {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(50px);
+	}
+}
+
+#downArrow:active {
+  animation: zoomOut 0.5s ease 0s 1 normal forwards;
+}
+
+@keyframes zoomOut {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0);
+	}
+}
+
+@media screen and (max-width: 600px) {
+  #timeline {
+    margin-left: 2.5%;
+  }
+  
+  .event {
+    margin-left: 3%;
+  }
+  
+  .company-image {
+    width: 30%;
+  }
+  
+  .details {
+    margin-left: 0%;
+  }
+  
+  .description {
+    border-top: 2px dashed white;
+    padding-top: 1em;
+  }
+
+  .with-list  ul {
+    padding-left: 1em;
+    line-height: 1em;
+  }
+}
