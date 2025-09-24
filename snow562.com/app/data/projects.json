@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Discord Bot",
+        "imageurl": "https://assets.snow562.com/images/logos/discord.png",
+        "status": "COMPLETE",
+        "description": "I have made multiple bots for chat application \"Discord\" over the years."
+    },
+    {
+        "name": "BakkesMod Plugin",
+        "imageurl": "https://assets.snow562.com/images/logos/bakkesmod.png",
+        "status": "INDEV",
+        "description": "A plugin for video game \"Rocket League\" that allows Twitch streamers to share their current car loadout with their viewers."
+    },
+    {
+        "name": "Personal Website",
+        "imageurl": "https://assets.snow562.com/images/logos/snowflake.svg",
+        "status": "INDEV",
+        "description": "This website that you're currently looking at is always a work-in-progress."
+    },
+    {
+        "name": "Microsoft Teams Chatbot",
+        "imageurl": "https://assets.snow562.com/images/logos/msteams.png",
+        "status": "COMPLETE",
+        "description": "A chatbot that facilitates integration with security services, streamlining operations."
+    },
+    {
+        "name": "Oaxaca (Group Project)",
+        "imageurl": "https://assets.snow562.com/images/projects/oaxaca.png",
+        "status": "ARCHIVED",
+        "description": "A web-based restaurant operational management system."
+    },
+    {
+        "name": "Dyno Food Wizard",
+        "imageurl": "https://assets.snow562.com/images/projects/dyno.png",
+        "status": "ARCHIVED",
+        "description": "A website from a hackathon that allowed the user to upload an image of their food and returned nutritional information."
+    },
+    {
+        "name": "Shoe Fighter (Group Project)",
+        "imageurl": "https://assets.snow562.com/images/projects/shoefighter.png",
+        "status": "ARCHIVED",
+        "description": "A 2D local PvP fighting game, where players fight against each other as types of shoes."
+    },
+    {
+        "name": "Train Exit Database",
+        "imageurl": "https://assets.snow562.com/images/unknown.png",
+        "status": "IDEA",
+        "description": "A website that allows users to enter journey details to see the best location at which to disembark the train (i.e. closest to the station exit)."
+    }
+]
