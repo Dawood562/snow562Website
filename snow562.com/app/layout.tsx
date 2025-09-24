@@ -24,6 +24,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <base href="https://assets.snow562.com/" />
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <title>Dawood Ahmad</title>
+        <link rel="stylesheet" href="css/shared.css" />
+        <link rel="stylesheet" href="css/navbar.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link crossOrigin="" rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
