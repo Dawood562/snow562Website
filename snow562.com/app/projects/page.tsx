@@ -6,6 +6,7 @@ import projectsData from "../data/projects.json";
 import { ProjectCard, ProjectStatus, STATUS_ORDER } from "../components/ProjectCard";
 
 interface Project {
+  id: string
   name: string;
   description: string;
   status: ProjectStatus;
@@ -35,7 +36,7 @@ export default function ProjectsPage() {
         <div className="projects">
 
           {sortedProjects.map((project, i) => ( <ProjectCard key={i} project={project} />))}
-          
+
         </div>
     </div>
     </>

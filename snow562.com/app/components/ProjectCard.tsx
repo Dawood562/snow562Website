@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export enum ProjectStatus {
   IDEA = "IDEA",
   INDEV = "INDEV",
@@ -38,6 +40,7 @@ const STATUS_INFO: Record<ProjectStatus, { label: string; backgroundColour: stri
 
 
 interface Project {
+  id: string;
   name: string;
   imageurl: string;
   description: string;
@@ -51,10 +54,9 @@ export function ProjectCard({ project }: { project: Project }) {
     <div className="project">
         <img className="project-image" src={project.imageurl} />
         <div className="details">
-            <div className="name">{project.name}</div> <div className="status" style={{backgroundColor: backgroundColour}}> <div className="status-emoji"><img src={emoji} /></div>{label}</div>
+            <Link href={`/projects/${project.id}`} className="name">{project.name}</Link> <div className="status" style={{backgroundColor: backgroundColour}}> <div className="status-emoji"><img src={emoji} /></div>{label}</div>
         </div>
         <div className="description">{project.description}</div>
     </div>
-
   );
 }
