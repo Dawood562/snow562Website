@@ -16,8 +16,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+        <meta charSet="UTF-8" />
+        <meta name="description" content="Hiiiii" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google" content="notranslate"></meta>
         <title>Dawood Ahmad</title>
+        <link rel="icon" type="image/x-icon" href="https://assets.snow562.com/images/favicon.ico" />
         <link rel="stylesheet" href="https://assets.snow562.com/css/shared.css" />
         <link rel="stylesheet" href="https://assets.snow562.com/css/navbar.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
