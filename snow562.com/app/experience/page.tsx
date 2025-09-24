@@ -61,7 +61,7 @@ export default function Experience() {
                 <div className="company">{item.company}</div>
                 <div className="position">{item.position}</div>
                 <div className="date">{item.date}</div>
-                <div className="description">{item.description}</div>
+                <div className="description" dangerouslySetInnerHTML={{__html: item.description}}></div>
             </div>
         ))}
       </div>

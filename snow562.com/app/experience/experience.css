@@ -76,11 +76,12 @@ html {
   padding-left: 2em;
 }
 
-.with-list ul {
+ul {
   display: block;
   list-style: disc;
   line-height: 1em;
   margin-left: 0;
+  line-height: 1em;
   padding-left: 1em;
 }
 
@@ -139,9 +140,8 @@ html {
     border-top: 2px dashed white;
     padding-top: 1em;
   }
-
-  .with-list  ul {
-    padding-left: 1em;
+  
+  ul {
     line-height: 1em;
   }
 }
