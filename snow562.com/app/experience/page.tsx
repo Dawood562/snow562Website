@@ -48,10 +48,8 @@ export default function Experience() {
   return (
     <>
       <Head>
-        <link
-          rel="stylesheet"
-          href="https://assets.snow562.com/css/experience.css"
-        />
+        <title>Dawood Ahmad | Experience</title>
+        <meta name="description" content="Hiiiii" />
       </Head>
 
       <div id="root">

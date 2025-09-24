@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Dawood Ahmad | About",
+  description: "Hiiiii",
+};
+
 export default function AboutPage() {
   return (
     <div id="root">
