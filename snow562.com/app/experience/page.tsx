@@ -57,12 +57,27 @@ export default function Experience() {
         <div id="timeline">
         {experienceData.map((item, index) => (
             <div key={index} className="event">
-                <img className="company-image" src={item.imageurl} alt={`Logo for ${item.company}`} />
-                <div className="company">{item.company}</div>
-                <div className="position">{item.position}</div>
-                <div className="date">{item.date}</div>
-                <div className="description" dangerouslySetInnerHTML={{__html: item.description}}></div>
+            <img className="company-image" src={item.imageurl} alt={`Logo for ${item.company}`} />
+              {item.work.map((workItem, workIndex) => (
+            <div key={workIndex}>
+              <div className="details">
+                {workIndex === 0 && (
+                  <>
+                    <div className="company">{item.company}</div>
+                    {item.location && <> {item.location}</>}
+                  </>
+                )}
+                <div className="position">{workItem.position}</div>
+                <div className="date">{workItem.date}</div>
+              </div>
+              <div
+                className="description"
+                dangerouslySetInnerHTML={{ __html: workItem.description }}
+              />
+              {workIndex < item.work.length - 1 && <br />}
             </div>
+          ))}
+        </div>
         ))}
       </div>
 

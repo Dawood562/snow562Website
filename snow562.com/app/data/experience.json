@@ -3,44 +3,71 @@
         "company": "Quo Vadis CCS Ltd.",
         "imageurl": "https://assets.snow562.com/images/logos/QVCCS.png",
         "location": "",
-        "position": "Software and Solutions Engineer",
-        "date": "September 2025 - Present",
-        "description": ""
+        "work": [{
+            "position": "Software and Solutions Engineer",
+            "date": "September 2025 - Present",
+            "description": ""
+        }]
+    },
+
+    {
+        "company": "Crystal Daiva",
+        "imageurl": "https://assets.snow562.com/images/logos/crystal daiva.png",
+        "location": "",
+        "work": [{
+            "position": "E-Commerce Consultant & Implementor",
+            "date": "July 2025 - September 2025",
+            "description": "<ul> <li>Regularly consulted to assess needs and align implementation with business goals.</li> <li>Provided end-to-end technical support for setting up a Shopify e-commerce store, including custom domain setup, DNS configuration, email forwarding, website design, translations, and payment system integration.</li> <li>Managed product data-related tasks such as product imports, inventory synchronization with Facebook and Instagram, and image editing in Adobe Photoshop to ensure a consistent visual theme.</li> <li>Performed troubleshooting, QA, and performance optimization to ensure site stability and responsiveness.</li> <li>Assisted with Meta Ads campaigns.</li> <li>Helped set up an email newsletter.</li></ul>"
+        }]
     },
 
     {
         "company": "RHUL Gamesoc",
         "imageurl": "https://assets.snow562.com/images/logos/gamesoc white.png",
         "location": "@ Royal Holloway, University of London",
-        "position": "Secretary",
-        "date": "January 2025 - September 2025",
-        "description": "If something needs doing, I do it. I help to manage our many sub-communities, record meeting minutes, ensuring emails are actioned upon promptly, supervising committee attendance and availability for events and meetings, and ensuring that our events are SU-compliant."
+        "work": [{
+            "position": "Secretary",
+            "date": "January 2025 - September 2025",
+            "description": "If something needs doing, I do it. I help to manage our many sub-communities, record meeting minutes, ensuring emails are actioned upon promptly, supervising committee attendance and availability for events and meetings, and ensuring that our events are SU-compliant."
+        }]
     },
 
     {
         "company": "Royal Holloway",
         "imageurl": "https://assets.snow562.com/images/logos/rhul.png",
         "location": "@ Royal Holloway, University of London",
-        "position": "Frontline Clearing Call Centre Operator",
-        "date": "August 2024",
-        "description": "First line telephone support on A-Level Results-Day; triaging calls, minimising call queue times by resolving general queries and concerns."
+        "work": [{
+            "position": "Frontline Clearing Call Centre Operator",
+            "date": "August 2024",
+            "description": "First line telephone support on A-Level Results-Day; triaging calls, minimising call queue times by resolving general queries and concerns."
+        }]
     },
 
     {
         "company": "RHUL Esports",
         "imageurl": "https://assets.snow562.com/images/logos/royal bears.png",
         "location": "@ Royal Holloway, University of London",
-        "position": "Esports Events Secretary",
-        "date": "September 2024 - December 2024",
-        "description": "My role as the Esports Events Secretary requires me to organise and run all Esports-related events undertaken by the group, whilst ensuring they are accessible and inclusive This applies to both external and internal events, such as tournaments, and I aid with the promotion of said events."
+        "work": [{
+            "position": "Esports Events Secretary",
+            "date": "September 2024 - December 2024",
+            "description": "My role as the Esports Events Secretary requires me to organise and run all Esports-related events undertaken by the group, whilst ensuring they are accessible and inclusive This applies to both external and internal events, such as tournaments, and I aid with the promotion of said events."
+        },
+        {
+            "position": "Esports Secretary",
+            "date": "August 2023 - July 2024",
+            "description": "As the Esports Secretary, I am the primary form of correspondence for Esports at Royal Holloway. It is necessary that I keep inventory of players and equipment, oversee and help with the management of RHUL Esports teams, and assist in the organisation and hosting of friendly tournaments within the university alongside the Esports Social and Events Secretary. This is in addition to assisting the overall work of the Games' Society."
+        }
+        ]
     },
 
     {
         "company": "RSHP",
         "imageurl": "https://assets.snow562.com/images/logos/rshp.jpg",
         "location": "in London, UK",
-        "position": "Accounts Assistant",
-        "date": "June 2023 - September 2023",
-        "description": "<p>My main responsibilities included:</p> <ul> <li>Maintaining exchange rates using Deltek project software</li> <li>Creating new projects and ensuring the information remained up-to-date</li> <li>Analysed projects and categorized them for streamlined organisation</li> <li>Developed a bespoke report in Deltek for management to identify fees/sqm</li> <li>Development of business relations with partners</li> <li>Preparing audit schedules and responding to audit queries</li> <li>Raising and issuing sales invoices and credit notes</li> </ul>"
+        "work": [{
+            "position": "Accounts Assistant",
+            "date": "June 2023 - September 2023",
+            "description": "<p>My main responsibilities included:</p> <ul> <li>Maintaining exchange rates using Deltek project software</li> <li>Creating new projects and ensuring the information remained up-to-date</li> <li>Analysed projects and categorized them for streamlined organisation</li> <li>Developed a bespoke report in Deltek for management to identify fees/sqm</li> <li>Development of business relations with partners</li> <li>Preparing audit schedules and responding to audit queries</li> <li>Raising and issuing sales invoices and credit notes</li> </ul>"
+        }]
     }
 ]
