@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import "./experience.css";
 import experienceData from "../data/experience.json";
+import styles from "./experience.module.css";
 
 export default function ExperienceJS() {
     const arrowRef = useRef<HTMLImageElement | null>(null);
@@ -46,24 +46,24 @@ export default function ExperienceJS() {
   return (
     <div id="root">
         <div id="title">My Experience</div>
-        <div id="timeline">
+        <div id={styles.timeline}>
         {experienceData.map((item, index) => (
-            <div key={index} className="event">
-            <img className="company-image" src={item.imageurl} alt={`Logo for ${item.company}`} />
+            <div key={index} className={styles.event}>
+            <img className={styles.companyimage} src={item.imageurl} alt={`Logo for ${item.company}`} />
               {item.work.map((workItem, workIndex) => (
             <div key={workIndex}>
-              <div className="details">
+              <div className={styles.details}>
                 {workIndex === 0 && (
                   <>
-                    <div className="company">{item.company}</div>
+                    <div className={styles.company}>{item.company}</div>
                     {item.location && <> {item.location}</>}
                   </>
                 )}
-                <div className="position">{workItem.position}</div>
-                <div className="date">{workItem.date}</div>
+                <div className={styles.position}>{workItem.position}</div>
+                <div className={styles.date}>{workItem.date}</div>
               </div>
               <div
-                className="description"
+                className={styles.description}
                 dangerouslySetInnerHTML={{ __html: workItem.description }}
               />
               {workIndex < item.work.length - 1 && <br />}
@@ -75,16 +75,8 @@ export default function ExperienceJS() {
 
         {/* Down arrow */}
         <img
-          ref={arrowRef}
-          id="downArrow"
-          onClick={goDown}
-          src="https://assets.snow562.com/images/arrow-down.png"
-          alt="Downward Pointing Arrow"
-          style={{
-            cursor: "pointer",
-            visibility: visible ? "visible" : "hidden",
-          }}
-        />
+          ref={arrowRef} id={styles.downArrow} onClick={goDown} src="https://assets.snow562.com/images/arrow-down.png" alt="Downward Pointing Arrow"
+          style={{ cursor: "pointer", visibility: visible ? "visible" : "hidden", }} />
       </div>
   );
 }

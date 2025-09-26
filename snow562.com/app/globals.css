@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-main {
-  flex: 1;
-}
-
 html {
   height: 100%;
   margin: 0;
@@ -34,6 +30,10 @@ html::-webkit-scrollbar {
   to {scale: 2 1;} 
 }
 
+main {
+  flex: 1;
+}
+
 body {
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0)+60%, rgba(36, 3, 3, 1)), url("https://assets.snow562.com/images/background.webp");
   background-size: cover;
@@ -56,20 +56,6 @@ body {
   text-align: center;
 }
 
-.darken {
-  background: rgba(0, 0, 0, 0.7);
-  overflow: hidden;
-  left: 0px;
-  top: 0px;
-  width: 100%;
-  min-height: 100vh;
-  position: fixed;
-  z-index: 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
 #title {
   margin:2%;
   font-family: "Arial", Verdana;
@@ -89,33 +75,6 @@ h2 {
   display: block;
   filter: drop-shadow(5px 5px 10px rgb(18, 18, 18));
   padding: 1%;
-}
-
-footer {
-  width: 100%;
-  text-align: center;
-  background: rgb(11, 11, 11);
-  flex-direction: column;
-  justify-content: space-between; 
-  padding: 1rem;
-  margin-top: auto;
-}
-
-#social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  margin: 0.5rem 0;
-}
-
-#social img {
-  width: 64px;
-  transition: filter 0.3s ease;
-}
-
-#social img:hover {
-  filter: brightness(0.8) saturate(1.2);
 }
 
 a {
@@ -157,4 +116,63 @@ a:visited {
     padding-left: 5%;
     padding-right: 5%;
   }
+
+  .nav-links {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Styles for navigation bar */
+nav {
+  font-family: "Noto Sans";
+  padding: 20px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  display:flex;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1 em;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #cccccc;
+}
+
+/* Styles for footer*/
+footer {
+  width: 100%;
+  text-align: center;
+  background: rgb(11, 11, 11);
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 1rem;
+  margin-top: auto;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+#social img {
+  width: 64px;
+  transition: filter 0.3s ease;
+}
+
+#social img:hover {
+  filter: brightness(0.8) saturate(1.2);
 }

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "./experience/experience.css";
 
 export const metadata: Metadata = {
   title: "Dawood Ahmad",
@@ -24,7 +23,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate"></meta>
         <link rel="icon" type="image/x-icon" href="https://assets.snow562.com/images/favicon.ico" />
-        <link rel="stylesheet" href="https://assets.snow562.com/css/navbar.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link crossOrigin="" rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>

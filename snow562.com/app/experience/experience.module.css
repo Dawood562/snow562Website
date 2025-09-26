@@ -44,7 +44,7 @@ html {
   border-image-slice: 1;
 }
 
-.company-image {
+.companyimage {
   width: 17.5%;
 }
 
@@ -73,9 +73,6 @@ html {
 .description {
   margin-top: 2%;
   white-space: pre-wrap;
-}
-
-ul {
   display: block;
   list-style: disc;
   line-height: 1em;
@@ -127,7 +124,7 @@ ul {
     margin-left: 3%;
   }
   
-  .company-image {
+  .companyimage {
     width: 30%;
   }
   
@@ -138,9 +135,6 @@ ul {
   .description {
     border-top: 2px dashed white;
     padding-top: 1em;
-  }
-  
-  ul {
     line-height: 1em;
   }
 }
