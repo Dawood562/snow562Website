@@ -49,6 +49,9 @@ html {
 }
 
 .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   display: inline-block;
   vertical-align: top;
   margin-left: 2%;

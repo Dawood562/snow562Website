@@ -35,9 +35,9 @@
 }
 
 .status {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-left: 1em;
+  vertical-align: middle;
   border-radius: 1em;
   padding: 0.25em 0.5em 0.25em 0.5em;
   gap: 0.5em;
@@ -61,11 +61,11 @@
 
 .details {
   display: flex;
-  flex: 1 1 auto;
-  gap: 0.5em;
   align-items: center;
-  vertical-align: top;
+  flex-direction: row;
+  vertical-align: middle;
   margin-left: 2%;
+  gap: 1em;
 }
 
 .description {

@@ -1,8 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/projects/',
+        destination: '/projects',
+      },
+    ]
+  },
   output: "export",
-  /* config options here */
+  poweredByHeader: false
 };
 
 module.exports = nextConfig;
