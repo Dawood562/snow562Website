@@ -24,7 +24,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google" content="notranslate"></meta>
         <link rel="icon" type="image/x-icon" href="https://assets.snow562.com/images/favicon.ico" />
-        <link rel="stylesheet" href="https://assets.snow562.com/css/shared.css" />
         <link rel="stylesheet" href="https://assets.snow562.com/css/navbar.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link crossOrigin="" rel="preconnect" href="https://fonts.gstatic.com" />
@@ -33,7 +32,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased">
         <Navbar />
-        {children}
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
