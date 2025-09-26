@@ -1,9 +1,16 @@
 "use client";
 
 import Head from "next/head";
+import { Metadata } from "next";
 import { useEffect, useRef, useState } from "react";
 import "./experience.css";
 import experienceData from "../data/experience.json";
+
+export const metadata: Metadata = {
+  title: "Dawood Ahmad | Exp[erience",
+  description: "Hiiiii",
+};
+
 
 export default function Experience() {
   const arrowRef = useRef<HTMLImageElement | null>(null);
