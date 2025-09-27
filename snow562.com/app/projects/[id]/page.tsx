@@ -2,6 +2,7 @@ import projectsJson from "../../data/projects.json";
 export const projectsData = projectsJson;
 import { ProjectStatusLabel, ProjectStatus } from "../../components/ProjectCard";
 import styles from "../projects.module.css";
+import { Framework, FrameworkPill } from "@/app/components/FrameworkPill";
 
 interface Project {
   id: string;
@@ -9,7 +10,7 @@ interface Project {
   imageurl: string;
   status: ProjectStatus;
   shortdescription: string;
-  techstack: string[];
+  techstack: Framework[];
   links: {
     github: string;
     hostlocation: string;
@@ -39,8 +40,9 @@ export default function ProjectPage({ params: { id } }: { params: { id: string }
   return (
     <div id="root">
       <img className={styles.projectimage} src={project.imageurl} />
-      <div id="title">{project.name}</div>
-      <ProjectStatusLabel status={project.status} /> <p>| Project tech stack: {project.techstack.join(", ")}</p>
+      <div id="title" style={{paddingBottom: "0", marginBottom: "0"}}>{project.name}</div>
+      <ProjectStatusLabel status={project.status} />
+      <div style = {{display: "inline-flex", paddingTop: "2em", gap: "1em"}}>{project.techstack.map((framework, i) => ( <FrameworkPill key={i} framework={framework} />))} </div>
       <br />
       <div id="description" style={{maxWidth: "70%"}}>{project.shortdescription}</div>
       <div>View Repo: {project.links.github}, View live: {project.links.hostlocation}</div>

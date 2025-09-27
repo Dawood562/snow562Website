@@ -83,7 +83,7 @@
         "imageurl": "https://assets.snow562.com/images/projects/shoefighter.png",
         "status": "ARCHIVED",
         "shortdescription": "A 2D local PvP fighting game, where players fight against each other as types of shoes.",
-        "techstack": ["Python", "LibreSprite", "CodeSkulptor 3"],
+        "techstack": ["Python", "LibreSprite", "CodeSkulptor"],
         "links": {
             "github": "https://github.com/Dawood562/ShoeFighter",
             "hostlocation": ""

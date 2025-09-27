@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../projects/projects.module.css";
+import { CustomPill } from "./CustomPill";
 
 export enum ProjectStatus {
   IDEA = "IDEA",
@@ -51,9 +52,7 @@ interface Project {
 export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
   const { label, backgroundColour, emoji } = STATUS_INFO[status];
   return (
-    <div className={styles.status} style={{backgroundColor: backgroundColour}}>
-      <div className={styles.statusemoji}><img src={emoji} /></div> {label}
-    </div>
+    <CustomPill label={label} icon={`<img src="${emoji}" alt="${label} logo"/>`} colour={backgroundColour} />
   );
 }
 
