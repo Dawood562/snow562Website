@@ -1,6 +1,7 @@
 import projectsJson from "../../data/projects.json";
 export const projectsData = projectsJson;
 import { ProjectStatusLabel, ProjectStatus } from "../../components/ProjectCard";
+import styles from "../projects.module.css";
 
 interface Project {
   id: string;
@@ -37,9 +38,9 @@ export default function ProjectPage({ params: { id } }: { params: { id: string }
 
   return (
     <div id="root">
-      <img className="project-image" src={project.imageurl} />
+      <img className={styles.projectimage} src={project.imageurl} />
       <div id="title">{project.name}</div>
-      <ProjectStatusLabel status={project.status} /> <p>| Project tech stack: {project.techstack}</p>
+      <ProjectStatusLabel status={project.status} /> <p>| Project tech stack: {project.techstack.join(", ")}</p>
       <br />
       <div id="description" style={{maxWidth: "70%"}}>{project.shortdescription}</div>
       <div>View Repo: {project.links.github}, View live: {project.links.hostlocation}</div>

@@ -22,7 +22,7 @@
   text-align: left;
 }
 
-.project-image {
+.projectimage {
   flex: 0 0 auto;
   width: 7%;
   object-fit: cover;
@@ -43,7 +43,7 @@
   gap: 0.5em;
 }
 
-.status-emoji{
+.statusemoji{
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@
   height: 1.2em;
 }
 
-.status-emoji > img {
+.statusemoji > img {
   max-height: 0.8em;
   padding-left: 0.25em;
   padding-right: 0.25em;

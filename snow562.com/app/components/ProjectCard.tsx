@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "../projects/projects.module.css";
 
 export enum ProjectStatus {
   IDEA = "IDEA",
@@ -50,20 +51,20 @@ interface Project {
 export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
   const { label, backgroundColour, emoji } = STATUS_INFO[status];
   return (
-    <div className="status" style={{backgroundColor: backgroundColour}}>
-      <div className="status-emoji"><img src={emoji} /></div> {label}
+    <div className={styles.status} style={{backgroundColor: backgroundColour}}>
+      <div className={styles.statusemoji}><img src={emoji} /></div> {label}
     </div>
   );
 }
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="project">
-        <img className="project-image" src={project.imageurl} />
-        <div className="details">
-            <Link href={`/projects/${project.id}`} className="name">{project.name}</Link> {ProjectStatusLabel(project) }
+    <div className={styles.project}>
+        <img className={styles.projectimage} src={project.imageurl} />
+        <div className={styles.details}>
+            <Link href={`/projects/${project.id}`} className={styles.name}>{project.name}</Link> {ProjectStatusLabel(project) }
         </div>
-        <div className="description">{project.shortdescription}</div>
+        <div className={styles.description}>{project.shortdescription}</div>
     </div>
   );
 }

@@ -1,9 +1,9 @@
 import Link from "next/link";
 import Head from "next/head";
 import type { Metadata } from "next";
-import "./projects.css";
 import projectsData from "../data/projects.json";
 import { ProjectCard, ProjectStatus, STATUS_ORDER } from "../components/ProjectCard";
+import styles from "./projects.module.css";
 
 interface Project {
   id: string;
@@ -39,7 +39,7 @@ export default function ProjectsPage() {
         <div id="root">
         <div id="title">My Projects</div>
         <br />
-        <div className="projects">
+        <div className={styles.projects}>
 
           {sortedProjects.map((project, i) => ( <ProjectCard key={i} project={project} />))}
 
