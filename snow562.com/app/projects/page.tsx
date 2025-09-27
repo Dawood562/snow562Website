@@ -6,11 +6,17 @@ import projectsData from "../data/projects.json";
 import { ProjectCard, ProjectStatus, STATUS_ORDER } from "../components/ProjectCard";
 
 interface Project {
-  id: string
+  id: string;
   name: string;
-  description: string;
-  status: ProjectStatus;
   imageurl: string;
+  status: ProjectStatus;
+  shortdescription: string;
+  techstack: string[];
+  links: {
+    github: string;
+    hostlocation: string;
+  };
+  pagecontent: string[];
 }
 
 export const metadata: Metadata = {

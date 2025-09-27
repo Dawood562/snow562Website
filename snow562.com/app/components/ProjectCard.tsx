@@ -43,20 +43,27 @@ interface Project {
   id: string;
   name: string;
   imageurl: string;
-  description: string;
+  shortdescription: string;
   status: ProjectStatus;
 }
 
-export function ProjectCard({ project }: { project: Project }) {
-  const { label, backgroundColour, emoji } = STATUS_INFO[project.status];
+export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
+  const { label, backgroundColour, emoji } = STATUS_INFO[status];
+  return (
+    <div className="status" style={{backgroundColor: backgroundColour}}>
+      <div className="status-emoji"><img src={emoji} /></div> {label}
+    </div>
+  );
+}
 
+export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="project">
         <img className="project-image" src={project.imageurl} />
         <div className="details">
-            <Link href={`/projects/${project.id}`} className="name">{project.name}</Link> <div className="status" style={{backgroundColor: backgroundColour}}> <div className="status-emoji"><img src={emoji} /></div>{label}</div>
+            <Link href={`/projects/${project.id}`} className="name">{project.name}</Link> {ProjectStatusLabel(project) }
         </div>
-        <div className="description">{project.description}</div>
+        <div className="description">{project.shortdescription}</div>
     </div>
   );
 }
