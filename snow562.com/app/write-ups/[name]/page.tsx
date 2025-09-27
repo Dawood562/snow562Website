@@ -1,5 +1,5 @@
-import Head from "next/head";
 import { writeUpData } from "./writeups";
+import { Metadata } from "next";
 
 interface WriteUp {
   name: string;
@@ -12,14 +12,15 @@ export async function generateStaticParams() {
   }));
 }
 
+export const metadata: Metadata = {
+  title: "Dawood Ahmad | Write Ups",
+  description: "Hiiiii",
+};
+
 export default function WriteUp() {
     return (
         <>
-            <Head>
-                <title>Dawood Ahmad | Write Ups</title>
-                <meta name="description" content="Hiiiii" />
-            </Head>
-            <h1>Hellooooooooooo</h1>
+          <h1>Hellooooooooooo</h1>
         </>
     );
 }
