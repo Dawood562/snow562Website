@@ -3,6 +3,8 @@ export const projectsData = projectsJson;
 import { ProjectStatusLabel, ProjectStatus } from "../../components/ProjectCard";
 import styles from "../projects.module.css";
 import { Framework, FrameworkPill } from "@/app/components/FrameworkPill";
+import Link from "next/link";
+import { CustomPill } from "@/app/components/CustomPill";
 
 interface Project {
   id: string;
@@ -38,14 +40,17 @@ export default function ProjectPage({ params: { id } }: { params: { id: string }
   }
 
   return (
-    <div id="root">
-      <img className={styles.projectimage} src={project.imageurl} />
-      <div id="title" style={{paddingBottom: "0", marginBottom: "0"}}>{project.name}</div>
-      <ProjectStatusLabel status={project.status} />
-      <div style = {{display: "inline-flex", paddingTop: "2em", gap: "1em"}}>{project.techstack.map((framework, i) => ( <FrameworkPill key={i} framework={framework} />))} </div>
-      <br />
-      <div id="description" style={{maxWidth: "70%"}}>{project.shortdescription}</div>
-      <div>View Repo: {project.links.github}, View live: {project.links.hostlocation}</div>
-    </div>
+    <>
+      <div style={{top: "1em", left: "1em", fontSize: "0.8em", paddingLeft: "5em", paddingTop: "1em"}}><Link href="/projects" >Projects</Link> &gt; <Link href={`/projects/${project.id}`}>{project.name}</Link></div>
+      <div id="root">
+        <img className={styles.projectimage} src={project.imageurl} />
+        <div id="title" style={{padding: "0", margin: "0"}}>{project.name}</div>
+        <div> <ProjectStatusLabel status={project.status} /> </div>
+        <div style = {{display: "flex", flexWrap: "wrap", padding: "2em", gap: "1em", justifyContent: "center"}}>{project.techstack.map((framework, i) => ( <FrameworkPill key={i} framework={framework} /> ))} </div>
+        <br />
+        <div id="description" style={{maxWidth: "70%"}}>{project.shortdescription}</div>
+        <div>{project.links.github != "" ? <Link href={project.links.github} target="_blank"><CustomPill label="View Repo" icon="<img src='https://assets.snow562.com/images/logos/github dark.webp' />" colour="#C7C7C7"/></Link>: ""} View live: {project.links.hostlocation}</div>
+      </div>
+    </>
   );
 }
