@@ -49,7 +49,9 @@ export default function ProjectPage({ params: { id } }: { params: { id: string }
         <div style = {{display: "flex", flexWrap: "wrap", padding: "2em", gap: "1em", justifyContent: "center"}}>{project.techstack.map((framework, i) => ( <FrameworkPill key={i} framework={framework} /> ))} </div>
         <br />
         <div id="description" style={{maxWidth: "70%"}}>{project.shortdescription}</div>
-        <div>{project.links.github != "" ? <Link href={project.links.github} target="_blank"><CustomPill label="View Repo" icon="<img src='https://assets.snow562.com/images/logos/github dark.webp' />" colour="#C7C7C7"/></Link>: ""} View live: {project.links.hostlocation}</div>
+        <div style={{display: "flex", gap:"1em"}}>{project.links.github != "" ? <Link href={project.links.github} target="_blank"><CustomPill label="View Repo" icon="<img src='https://assets.snow562.com/images/logos/github dark.webp' />" colour="#C7C7C7" emoji = {false} /></Link>: ""}
+          {project.links.hostlocation != "" ? <Link href={project.links.hostlocation} target="_blank"><CustomPill label="View Live" icon="<img src='https://assets.snow562.com/images/emoji/viewlive.png' />" colour="#7223c1" emoji = {false}/></Link>: ""}
+        </div>
       </div>
     </>
   );

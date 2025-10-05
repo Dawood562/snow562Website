@@ -13,10 +13,10 @@ export function getContrastColor(hex: string): string {
   return yiq >= 128 ? "#000000" : "#FFFFFF";
 }
 
-export function CustomPill({ label, icon, colour }: { label: string, icon: string, colour: string }) {
+export function CustomPill({ label, icon, colour, emoji }: { label: string, icon: string, colour: string, emoji?: boolean }) {
     return (
         <div className={styles.status} style={{backgroundColor: colour, color: getContrastColor(colour)}}>
-            <div className={styles.statusemoji} dangerouslySetInnerHTML={{ __html: icon }}></div> {label}
+            <div className={emoji ? styles.statusemoji : styles.statuslogo} dangerouslySetInnerHTML={{ __html: icon }}></div> {label}
         </div>
     );
 }

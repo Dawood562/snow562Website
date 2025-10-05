@@ -52,7 +52,7 @@ interface Project {
 export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
   const { label, backgroundColour, emoji } = STATUS_INFO[status];
   return (
-    <CustomPill label={label} icon={`<img src="${emoji}" alt="${label} logo"/>`} colour={backgroundColour} />
+    <CustomPill label={label} icon={`<img src="${emoji}" alt="${label} logo"/>`} colour={backgroundColour} emoji = {true}/>
   );
 }
 
