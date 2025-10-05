@@ -59,7 +59,7 @@ export default function ExperienceJS() {
                     {item.location && <> {item.location}</>}
                   </>
                 )}
-                <div className={styles.position}>{workItem.position}</div>
+                <div className={styles.position}>“{workItem.position}”</div>
                 <div className={styles.date}>{workItem.date}</div>
               </div>
               <div
