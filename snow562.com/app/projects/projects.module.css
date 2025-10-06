@@ -93,3 +93,34 @@
   text-decoration: none;
   color: inherit;
 }
+
+
+@media screen and (max-width: 600px) {
+  .projects {
+    grid-template-columns: 100%;
+    margin: 1em;
+    padding: 0.25em;
+    gap: 2em;
+  }
+  
+  .project {
+    flex-direction: column;
+    max-height: none;
+  }
+  
+  .projectimage {
+    width: 20%;
+    margin-bottom: 0;
+  }
+  
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    gap: 0.5em;
+  }
+  
+  .description {
+    margin-top: 1em;
+  }
+}
