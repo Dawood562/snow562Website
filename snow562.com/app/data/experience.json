@@ -1,6 +1,7 @@
 [
     {
         "company": "Quo Vadis CCS Ltd.",
+        "companyurl": "https://www.qvccs.com/",
         "imageurl": "https://assets.snow562.com/images/logos/QVCCS.png",
         "location": "",
         "work": [{
@@ -12,6 +13,7 @@
 
     {
         "company": "Crystal Daiva",
+        "companyurl": "https://crystaldaiva.com/",
         "imageurl": "https://assets.snow562.com/images/logos/crystal daiva.png",
         "location": "",
         "work": [{
@@ -23,6 +25,7 @@
 
     {
         "company": "RHUL Gamesoc",
+        "companyurl": "https://www.su.rhul.ac.uk/societies/a-z/games/",
         "imageurl": "https://assets.snow562.com/images/logos/gamesoc_white.png",
         "location": "@ Royal Holloway, University of London",
         "work": [{
@@ -34,6 +37,7 @@
 
     {
         "company": "Royal Holloway",
+        "companyurl": "https://www.royalholloway.ac.uk/",
         "imageurl": "https://assets.snow562.com/images/logos/rhul.png",
         "location": "@ Royal Holloway, University of London",
         "work": [{
@@ -45,6 +49,7 @@
 
     {
         "company": "RHUL Esports",
+        "companyurl": "https://www.su.rhul.ac.uk/sports/a-z/esports/",
         "imageurl": "https://assets.snow562.com/images/logos/royal bears.png",
         "location": "@ Royal Holloway, University of London",
         "work": [{
@@ -62,6 +67,7 @@
 
     {
         "company": "RSHP",
+        "companyurl": "https://rshp.com/",
         "imageurl": "https://assets.snow562.com/images/logos/rshp.jpg",
         "location": "in London, UK",
         "work": [{

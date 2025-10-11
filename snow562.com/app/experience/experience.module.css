@@ -86,6 +86,10 @@
   cursor: pointer;
 }
 
+.company a {
+  text-decoration: none;
+}
+
 @keyframes up-and-down {
 	0% {
 		transform: translateY(0);

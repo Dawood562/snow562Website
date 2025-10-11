@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import experienceData from "../data/experience.json";
 import styles from "./experience.module.css";
+import Link from "next/link";
 
 export default function ExperienceJS() {
     const arrowRef = useRef<HTMLImageElement | null>(null);
@@ -55,7 +56,7 @@ export default function ExperienceJS() {
               <div className={styles.details}>
                 {workIndex === 0 && (
                   <>
-                    <div className={styles.company}>{item.company}</div>
+                    <div className={styles.company}><a href={item.companyurl} target="_blank">{item.company}</a></div>
                     {item.location && <> {item.location}</>}
                   </>
                 )}
