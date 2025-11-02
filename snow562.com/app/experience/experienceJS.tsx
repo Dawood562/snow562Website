@@ -2,7 +2,6 @@
 import { useEffect, useRef, useState } from "react";
 import experienceData from "../data/experience.json";
 import styles from "./experience.module.css";
-import Link from "next/link";
 
 export default function ExperienceJS() {
     const arrowRef = useRef<HTMLImageElement | null>(null);

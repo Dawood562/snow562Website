@@ -1,24 +1,11 @@
 import projectsJson from "../../data/projects.json";
 export const projectsData = projectsJson;
-import { ProjectStatusLabel, ProjectStatus } from "../../components/ProjectCard";
+import { ProjectStatusLabel } from "../../components/ProjectCard";
 import styles from "../projects.module.css";
-import { Framework, FrameworkPill } from "@/app/components/FrameworkPill";
+import { FrameworkPill } from "@/app/components/FrameworkPill";
 import Link from "next/link";
 import { CustomPill } from "@/app/components/CustomPill";
-
-interface Project {
-  id: string;
-  name: string;
-  imageurl: string;
-  status: ProjectStatus;
-  shortdescription: string;
-  techstack: Framework[];
-  links: {
-    github: string;
-    hostlocation: string;
-  };
-  pagecontent: string[];
-}
+import { Project } from '../../_interfaces/Project';
 
 export async function generateStaticParams() {
   return (projectsData as Project[]).map((project) => ({

@@ -1,23 +1,10 @@
-import Link from "next/link";
 import Head from "next/head";
 import type { Metadata } from "next";
 import projectsData from "../data/projects.json";
-import { ProjectCard, ProjectStatus, STATUS_ORDER } from "../components/ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
+import { STATUS_ORDER } from "../_interfaces/ProjectStatus";
 import styles from "./projects.module.css";
-
-interface Project {
-  id: string;
-  name: string;
-  imageurl: string;
-  status: ProjectStatus;
-  shortdescription: string;
-  techstack: string[];
-  links: {
-    github: string;
-    hostlocation: string;
-  };
-  pagecontent: string[];
-}
+import { Project } from '../_interfaces/Project';
 
 export const metadata: Metadata = {
   title: "Dawood Ahmad | Projects",
