@@ -10,7 +10,7 @@ export function WriteUpCard({ id, title, imageURL, shortDescription, date, autho
     <div className={styles.writeup}>
         <div className={styles.details}>
             <img className={styles.writeupimage} src={imageURL} />
-            <Link href={`/write-ups/${id}`} className={styles.name}>{title}</Link>
+            <Link href={`/writeups/${id}`} className={styles.name}>{title}</Link>
         </div>
         <img src={imageurl} className={styles.authorimg}/> {name} • {from}
         <div className={styles.description}>{shortDescription}</div>
