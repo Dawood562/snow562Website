@@ -1,6 +1,6 @@
 import Link from "next/link";
 import RelativeTime from '@/app/components/RelativeTime';
-import styles from '../write-ups/writeups.module.css';
+import styles from '../writeups/writeups.module.css';
 import { Author, STATUS_INFO } from '../_interfaces/Author';
 
 export function WriteUpCard({ id, title, imageURL, shortDescription, date, author }: {  id: string, title: string, imageURL: string, shortDescription: string, date: string, author: Author }) {
