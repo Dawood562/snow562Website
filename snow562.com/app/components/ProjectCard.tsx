@@ -2,7 +2,6 @@ import Link from "next/link";
 import styles from "../projects/projects.module.css";
 import { CustomPill } from "./CustomPill";
 import { ProjectStatus, STATUS_INFO } from '../_interfaces/ProjectStatus';
-import { Project } from '../_interfaces/Project'
 
 export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
   const { label, backgroundColour, emoji } = STATUS_INFO[status];
@@ -11,14 +10,14 @@ export function ProjectStatusLabel({ status }: { status: ProjectStatus }) {
   );
 }
 
-export function ProjectCard({ project }: { project: Project }) {
+export function ProjectCard({ id, name, imageURL, shortDescription, status }: {  id: string, name: string, imageURL: string, shortDescription: string, status?: ProjectStatus }) {
   return (
     <div className={styles.project}>
-        <img className={styles.projectimage} src={project.imageurl} />
+        <img className={styles.projectimage} src={imageURL} />
         <div className={styles.details}>
-            <Link href={`/projects/${project.id}`} className={styles.name}>{project.name}</Link> {ProjectStatusLabel(project) }
+            <Link href={`/projects/${id}`} className={styles.name}>{name}</Link> { status && <ProjectStatusLabel status={status} /> }
         </div>
-        <div className={styles.description}>{project.shortdescription}</div>
+        <div className={styles.description}>{shortDescription}</div>
     </div>
   );
 }

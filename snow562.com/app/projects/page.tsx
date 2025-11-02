@@ -28,7 +28,7 @@ export default function ProjectsPage() {
         <br />
         <div className={styles.projects}>
 
-          {sortedProjects.map((project, i) => ( <ProjectCard key={i} project={project} />))}
+          {sortedProjects.map((project, i) => ( <ProjectCard key={i} id={project.id} name={project.name} imageURL={project.imageurl} shortDescription={project.shortdescription} status={project.status}/>))}
 
         </div>
     </div>
