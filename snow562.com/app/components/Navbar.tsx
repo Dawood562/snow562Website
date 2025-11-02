@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link href="/about-me">About Me</Link>&emsp;
         <Link href="/projects">Projects</Link>&emsp;
         <Link href="/experience">Experience</Link>&emsp;
-        <Link href="/writeups">Experience</Link>
+        <Link href="/writeups">Write-Ups</Link>
     </div>
     </nav>
   );
