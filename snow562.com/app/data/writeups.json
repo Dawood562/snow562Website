@@ -1,20 +1,20 @@
 [
   {
-    "id": "placeholder",
-    "title": "placeholder",
-    "date": "2025-11-11T01:23:45",
+    "id": "danyal-shah-fyp",
+    "title": "Getting into Danyal Shah's Competitive Revision Website",
+    "date": "2025-11-02T01:23:45",
     "author": "Dawood",
-    "imageurl": "asd",
-    "shortdescription": "asd",
+    "imageurl": "https://assets.snow562.com/images/writeups/thumbnails/danyal-shah-fyp.png",
+    "shortdescription": "I came across Danyal's post on LinkedIn announcing that his Final Year Project was now being hosted on his own site for anyone to use. After clicking on the link and seeing an \"admin login\" button, I figured I'd try and see if I could get past the security measures.",
     "pagecontent": ["asd", "asd"]
   },
   {
-    "id": "placeholder",
-    "title": "placeholder",
-    "date": "2025-11-08T01:23:45",
+    "id": "c2cctf2025",
+    "title": "C2C CTF 2025 (Hosted by Northeastern University)",
+    "date": "2025-10-15T01:23:45",
     "author": "Dawood",
-    "imageurl": "asd",
-    "shortdescription": "asd",
+    "imageurl": "https://assets.snow562.com/images/writeups/thumbnails/c2c-ctf-2025.png",
+    "shortdescription": "A write-up for a CTF I took part in, getting 61st place out of 200+.",
     "pagecontent": ["asd", "asd"]
   }
 ]

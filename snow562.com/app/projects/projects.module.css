@@ -11,7 +11,7 @@
 .project {
   display: flex;
   align-items: flex-start;
-  flex-direction: row; /* or row, depending on layout */
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 1em;
   width: 100%;
@@ -87,6 +87,7 @@
 .description {
   flex-basis: 100%;
   margin-top: 0.5em;
+  color: #bbbbbb;
 }
 
 .name {

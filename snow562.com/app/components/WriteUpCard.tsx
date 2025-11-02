@@ -1,16 +1,18 @@
 import Link from "next/link";
-import styles from "../projects/projects.module.css";
 import RelativeTime from '@/app/components/RelativeTime';
+import styles from '../write-ups/writeups.module.css';
+import { Author, STATUS_INFO } from '../_interfaces/Author';
 
-export function WriteUpCard({ id, name, imageURL, shortDescription, date }: {  id: string, name: string, imageURL: string, shortDescription: string, date: string }) {
+export function WriteUpCard({ id, title, imageURL, shortDescription, date, author }: {  id: string, title: string, imageURL: string, shortDescription: string, date: string, author: Author }) {
   var from = RelativeTime.from(new Date(date));
+  const { name, imageurl, colour } = STATUS_INFO[author];
   return (
-    <div className={styles.project}>
-        <img className={styles.projectimage} src={imageURL} />
+    <div className={styles.writeup}>
         <div className={styles.details}>
-            <Link href={`/writeups/${id}`} className={styles.name}>{name}</Link>
+            <img className={styles.writeupimage} src={imageURL} />
+            <Link href={`/write-ups/${id}`} className={styles.name}>{title}</Link>
         </div>
-        {from}
+        <img src={imageurl} className={styles.authorimg}/> {name} • {from}
         <div className={styles.description}>{shortDescription}</div>
     </div>
   );

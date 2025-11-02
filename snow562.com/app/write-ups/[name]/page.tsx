@@ -6,7 +6,7 @@ import { WriteUp } from '../../_interfaces/WriteUp';
 
 export async function generateStaticParams() {
   return (writeUpData as WriteUp[]).map((writeup) => ({
-    id: writeup.id,
+    name: writeup.id,
   }));
 }
 
