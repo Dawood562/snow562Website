@@ -5,7 +5,9 @@ export interface WriteUp {
   title: string;
   date: string;
   author: Author;
-  imageurl: string;
+  previewimageurl: string;
+  mainimageurl: string;
+  mainimagecaption: string;
   shortdescription: string;
   pagecontent: string[];
 }

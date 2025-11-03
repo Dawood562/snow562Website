@@ -28,8 +28,23 @@
   clip-path: circle(50%);
 }
 
-.name {
-  font-size: 2em;
+.mainimage {
+  width: 40%;
+}
+
+.caption {
+  font-style: italic;
+  color: #bbbbbb;
+  font-size: 0.8em;
+}
+
+.smalltitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.bigtitle {
+  font-size: 3em;
   font-weight: bold;
 }
 

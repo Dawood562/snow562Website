@@ -19,7 +19,7 @@ export default function WriteUps() {
                 <div id="title">Write-Ups</div>
                 <br />
                 <div className={styles.writeups}>
-                {sortedwriteups.map((writeup, i) => ( <WriteUpCard key={i} id={writeup.id} title={writeup.title} imageURL={writeup.imageurl} shortDescription={writeup.shortdescription} date={writeup.date} author={writeup.author}/>))}
+                {sortedwriteups.map((writeup, i) => ( <WriteUpCard key={i} id={writeup.id} title={writeup.title} previewimageurl={writeup.previewimageurl} shortDescription={writeup.shortdescription} date={writeup.date} author={writeup.author}/>))}
                 </div>
             </div>
         </>
