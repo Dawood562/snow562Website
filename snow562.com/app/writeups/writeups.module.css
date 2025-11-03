@@ -2,7 +2,7 @@
   gap: 5em;
   padding: 0.25em;
   place-items: center;
-  max-width: 50%;
+  max-width: 50%
 }
 
 .writeup {
@@ -53,18 +53,20 @@
   align-items: center;
   flex-direction: row;
   vertical-align: middle;
-  margin-left: 2%;
   gap: 1em;
+  margin-left: 1%;
 }
 
 .description {
   flex-basis: 100%;
   margin-top: 0.5em;
   color: #bbbbbb;
+  margin-left: 1%;
 }
 
 .authorimg {
   max-height: 2em;
   clip-path: circle(50%);
   display: inline-block;
+  margin-left: 2%;
 }
