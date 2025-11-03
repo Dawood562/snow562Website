@@ -79,8 +79,12 @@ h2 {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 a:visited {
@@ -201,4 +205,12 @@ footer {
     width: 75%;
     display: block;
   }
+}
+
+.breadcrumbs {
+  top: 1em;
+  left: 1em;
+  font-size: 0.8em;
+  padding-left: 5em;
+  padding-top: 1em
 }

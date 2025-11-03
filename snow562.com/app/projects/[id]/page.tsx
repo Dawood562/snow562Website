@@ -28,7 +28,7 @@ export default function ProjectPage({ params: { id } }: { params: { id: string }
 
   return (
     <>
-      <div style={{top: "1em", left: "1em", fontSize: "0.8em", paddingLeft: "5em", paddingTop: "1em"}}><Link href="/projects" >Projects</Link> &gt; <Link href={`/projects/${project.id}`}>{project.name}</Link></div>
+      <div className="breadcrumbs"><Link className="underline" href="/projects" >Projects</Link> &gt; <Link className="underline" href={`/projects/${project.id}`}>{project.name}</Link></div>
       <div id="root">
         <img className={styles.projectimage} src={project.imageurl} />
         <div id="title" style={{padding: "0", margin: "0"}}>{project.name}</div>
