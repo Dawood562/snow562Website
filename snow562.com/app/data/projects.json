@@ -96,6 +96,19 @@
         "imageurl": "https://assets.snow562.com/images/unknown.png",
         "status": "IDEA",
         "shortdescription": "A website that allows users to enter journey details to see the best location at which to disembark the train (i.e. closest to the station exit).",
+        "techstack": ["TBD", "GoLang", "React"],
+        "links": {
+            "github": "",
+            "hostlocation": ""
+        },
+        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+    },
+    {
+        "id": "IDEA-02",
+        "name": "Chrome Extension",
+        "imageurl": "https://assets.snow562.com/images/unknown.png",
+        "status": "IDEA",
+        "shortdescription": "A chrome extension that, when a popup appears to uncheck valid cookies for personalised advertising, will uncheck them all for the user.",
         "techstack": ["TBD"],
         "links": {
             "github": "",
