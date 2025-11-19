@@ -98,7 +98,7 @@
         "shortdescription": "A website that allows users to enter journey details to see the best location at which to disembark the train (i.e. closest to the station exit).",
         "techstack": ["TBD", "GoLang", "React"],
         "links": {
-            "github": "",
+            "github": "https://github.com/Dawood562/TrainExitDB",
             "hostlocation": ""
         },
         "pagecontent": ["Some text", "An image - <Image>? <Link>?"]

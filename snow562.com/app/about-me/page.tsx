@@ -22,9 +22,13 @@ export default function AboutPage() {
             With a little bit of interest in many things, from Biology and Physics to Music and Languages, I try to make sure I know about a multitude of things.
           </div>
           <br />
+          <div className="aboutmetext">
+            Even though I've only gone a few times, skiing is one of the most exhilarating, fun sports I've ever taken part in and I cannot wait until I can afford to go myself... or with friends.
+          </div>
+          <br />
           <br />
           <div className="aboutmetext">
-            I have a close history with esports, having attended my first event <span style={{"color": "#BBBBBB"}}>(RLCS Season 5)</span> in 2018 and regularly watching and engaging with esports for different titles <span style={{"color": "#BBBBBB"}}>(Rocket League, Overwatch, CS, Apex Legends, etc.)</span> since.
+            I have a close history with esports, having attended my first event <span style={{"color": "#BBBBBB"}}>(RLCS Season 5)</span> in 2018 and regularly watching and engaging with esports for different titles <span style={{"color": "#BBBBBB"}}>(Rocket League, Overwatch, CS, Apex Legends, etc.)</span> since. I've also played Overwatch and Rocket League for my uni team, Royal Bears.
           </div>
           <br />
         </div>
