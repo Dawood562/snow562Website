@@ -38,8 +38,8 @@ export default function WriteUpPage({ params: { id } }: { params: { id: string }
           <br />
           <img className={styles.mainimage} src={writeup.mainimageurl} />
           <div className={styles.caption}>{writeup.mainimagecaption}</div>
-          <br />
-          <div id="description" style={{maxWidth: "70%"}}>{writeup.shortdescription}</div>
+          <br /><br /><br />
+          <div id="description" style={{maxWidth: "70%"}} dangerouslySetInnerHTML={{__html: writeup.pagecontent.join("<br /> <br />")}}></div>
         </div>
       </>
   );
