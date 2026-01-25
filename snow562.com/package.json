@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "postbuild": "next-sitemap",
+    "postbuild": "node postbuild.js",
     "start": "next start"
   },
   "dependencies": {
-    "next": "15.5.3",
+    "next": "^15.5.9",
     "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -20,6 +20,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "fs-extra": "^11.3.3",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
