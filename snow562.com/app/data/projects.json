@@ -105,10 +105,10 @@
     },
     {
         "id": "IDEA-02",
-        "name": "Chrome Extension",
+        "name": "Ezora Wrapper",
         "imageurl": "https://assets.snow562.com/images/unknown.png",
         "status": "IDEA",
-        "shortdescription": "A chrome extension that, when a popup appears to uncheck valid cookies for personalised advertising, will uncheck them all for the user.",
+        "shortdescription": "A website that allows RHSU Societies to see a simpler, easier-to-navigate version of the webiste.",
         "techstack": ["TBD"],
         "links": {
             "github": "",

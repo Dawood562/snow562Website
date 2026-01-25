@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('https://assets.snow562.com/fonts/Montserrat_Variable.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('https://assets.snow562.com/fonts/NotoSans_Variable.ttf') format('truetype');
+  font-weight: 100 900;
+}
+
 html {
   height: 100%;
   margin: 0;
