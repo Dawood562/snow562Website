@@ -80,6 +80,11 @@ body {
   max-width: 80%;
 }
 
+#longdescription {
+  font-size: 1.25em;
+  max-width: 80%;
+}
+
 h2 {
   font-size: 1.75em;
 }

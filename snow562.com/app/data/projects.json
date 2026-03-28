@@ -10,20 +10,20 @@
             "github": "",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "2024-PRSNAL02",
         "name": "BakkesMod Plugin",
         "imageurl": "https://assets.snow562.com/images/logos/bakkesmod.png",
-        "status": "INDEV",
+        "status": "ARCHIVED",
         "shortdescription": "A plugin for video game \"Rocket League\" that allows Twitch streamers to share their current car loadout with their viewers.",
         "techstack": ["C#", "BakkesMod SDK"],
         "links": {
             "github": "https://github.com/Dawood562/rlpb",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": ["Due to the introduction of Easy AntiCheat to Rocket League from March 11th 2026, Bakkesmod no longer works in online play and so I have ceased development on this."]
     },
     {
         "id": "2023-PRSNAL01",
@@ -36,7 +36,7 @@
             "github": "https://github.com/Dawood562/snow562Website",
             "hostlocation": "https://snow562.com"
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "2025-UNICSW01",
@@ -49,7 +49,7 @@
             "github": "https://github.com/Dawood562/TeamsIntegrationBot",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "2023-GRPPRJ02",
@@ -62,7 +62,7 @@
             "github": "https://github.com/Dawood562/Oaxaca-RHUL",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "2023-HCKTHN01",
@@ -75,7 +75,7 @@
             "github": "",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "2022-GRPPRJ01",
@@ -88,7 +88,7 @@
             "github": "https://github.com/Dawood562/ShoeFighter",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "IDEA-01",
@@ -101,7 +101,7 @@
             "github": "https://github.com/Dawood562/TrainExitDB",
             "hostlocation": ""
         },
-        "pagecontent": ["Some text", "An image - <Image>? <Link>?"]
+        "pagecontent": [""]
     },
     {
         "id": "IDEA-02",

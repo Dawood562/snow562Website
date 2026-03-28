@@ -14,6 +14,7 @@ export default function Home() {
       <br />
       <div id="description">Hi! This is me.<br />
       A Graduate Computer Scientist with a love for Cyber Security and Esports!</div> <br />
+      Take a look at some more info about me from the hyperlinks above :)<br />
     </div>
   );
 }

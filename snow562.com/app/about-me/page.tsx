@@ -28,7 +28,7 @@ export default function AboutPage() {
           <br />
           <br />
           <div className="aboutmetext">
-            I have a close history with esports, having attended my first event <span style={{"color": "#BBBBBB"}}>(RLCS Season 5)</span> in 2018 and regularly watching and engaging with esports for different titles <span style={{"color": "#BBBBBB"}}>(Rocket League, Overwatch, CS, Apex Legends, etc.)</span> since. I've also played Overwatch and Rocket League for my uni team, Royal Bears.
+            I have a close history with esports, having attended my first event <span style={{"color": "#BBBBBB"}}>(RLCS Season 5)</span> in 2018 and regularly watching and engaging with esports for different titles <span style={{"color": "#BBBBBB"}}>(Rocket League, Overwatch, CS, Apex Legends, etc.)</span> since. I've also played Overwatch and Rocket League for my university team, Royal Bears.
           </div>
           <br />
         </div>
