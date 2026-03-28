@@ -33,7 +33,7 @@ export default function ExperienceJS() {
 
   function goDown() {
     window.scroll({
-      top: (3 * window.innerHeight) / 4,
+      top: document.body.scrollHeight,
       behavior: "smooth",
     });
 
